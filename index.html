@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXORA | Build • Design • Solve</title>
+    <link rel="icon" href="LOGO.png" type="image/png" />
+
+    <meta
+      name="description"
+      content="NEXORA - Turning ideas into reliable, future-ready digital products. Web & Mobile App Development, Design, and Technical Solutions."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="LOGO.png"
+            alt="NEXORA Logo"
+            height="50"
+            class="d-inline-block align-text-top logo-animated"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#why-nexora">Why Nexora</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-glass" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+      <div class="container position-relative z-2">
+        <div class="row align-items-center">
+          <div class="col-lg-6 hero-text-col reveal active">
+            <span
+              class="badge rounded-pill border border-primary text-primary-light mb-3 px-3 py-2"
+              style="
+                border-color: var(--primary-color) !important;
+                color: var(--secondary-color) !important;
+              "
+            >
+              <i class="fa-solid fa-code-branch me-2"></i> Software Company
+            </span>
+            <h1 class="display-title mb-4">
+              Build. Design. <br />
+              <span class="gradient-text">Solve.</span>
+            </h1>
+            <p
+              class="lead text-muted mb-5 text-justify-custom"
+              style="max-width: 90%"
+            >
+              We are NEXORA. We turn abstract ideas into concrete, future-ready
+              software solutions. From high-performance web apps to complex
+              technical infrastructures, we build the digital future.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#contact" class="btn btn-future">Start Project</a>
+              <a href="#services" class="btn btn-glass">Explore Services</a>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 mt-5 mt-lg-0 hero-img-container text-center reveal stagger-2 active"
+          >
+            <!-- Representing the "Tech" visually using glass cards floating or just the 3D Logo large -->
+            <div style="position: relative">
+              <img
+                src="LOGO.png"
+                class="hero-3d-logo img-fluid"
+                style="max-height: 400px"
+                alt="Nexora Future"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="position-relative">
+              <div class="glass-card p-0 overflow-hidden">
+                <img
+                  src="about_us.png"
+                  class="img-fluid w-100"
+                  alt="About Nexora Team"
+                  style="opacity: 0.8"
+                />
+                <div
+                  class="position-absolute bottom-0 start-0 w-100 p-4"
+                  style="
+                    background: linear-gradient(
+                      to top,
+                      rgba(0, 0, 0, 0.9),
+                      transparent
+                    );
+                  "
+                >
+                  <h4 class="text-white mb-1">Our Mission</h4>
+                  <p class="text-light-50 small m-0">
+                    Innovation through code & design.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal stagger-1">
+            <h2 class="mb-4">
+              About <span class="gradient-text">NEXORA</span>
+            </h2>
+            <p class="text-muted mb-4 fs-5">
+              We are a collective of developers, designers, and strategists
+              committed to pushing the boundaries of what's possible on the web.
+            </p>
+            <p class="text-muted mb-4">
+              We don't just build websites; we engineer digital experiences that
+              drive growth, ensure reliability, and scale effortlessly with your
+              business.
+            </p>
+
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="feature-list-item">
+                  <div class="feature-check">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">High Quality</h6>
+                    <small class="text-muted">Pixel-perfect execution.</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-list-item">
+                  <div class="feature-check">
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div>
+                    <h6 class="mb-1">Reliability</h6>
+                    <small class="text-muted">Systems you can trust.</small>
+                  </div>
+                </div>
+              </div>
+              <!-- More stats/features -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <h2 class="display-5 mb-3">
+            Our <span class="gradient-text">Expertise</span>
+          </h2>
+          <p class="text-muted">
+            Comprehensive software solutions tailored for impact.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4 reveal stagger-1">
+            <div class="glass-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-pen-nib"></i>
+              </div>
+              <h4 class="mb-3">Graphic & UI/UX</h4>
+              <p class="text-muted small">
+                Crafting unique visuals and user-centric interfaces that define
+                your brand's digital identity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4 reveal stagger-2">
+            <div class="glass-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-film"></i>
+              </div>
+              <h4 class="mb-3">Motion Graphics</h4>
+              <p class="text-muted small">
+                Engaging video content and animations to tell your story in a
+                dynamic way.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4 reveal stagger-3">
+            <div class="glass-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h4 class="mb-3">App Development</h4>
+              <p class="text-muted small">
+                Robust, scalable web and mobile applications built with modern
+                frameworks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-md-6 col-lg-4 reveal stagger-1">
+            <div class="glass-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-bug"></i>
+              </div>
+              <h4 class="mb-3">Technical Solutions</h4>
+              <p class="text-muted small">
+                Debugging, optimization, and solving complex architectural
+                challenges.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-md-6 col-lg-4 reveal stagger-2">
+            <div class="glass-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-file-contract"></i>
+              </div>
+              <h4 class="mb-3">Documentation</h4>
+              <p class="text-muted small">
+                Clear technical writing and project documentation for seamless
+                handovers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-md-6 col-lg-4 reveal stagger-3">
+            <div class="glass-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-bezier-curve"></i>
+              </div>
+              <h4 class="mb-3">Vector Tracing</h4>
+              <p class="text-muted small">
+                Converting low-quality rasters into high-precision, scalable
+                vector graphics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Nexora Link/Transition -->
+    <section id="why-nexora" class="position-relative py-5">
+      <div class="container">
+        <div class="glass-card p-5 reveal">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <h2 class="mb-3">
+                Why choose <span class="gradient-text">NEXORA?</span>
+              </h2>
+              <p class="text-muted">
+                We are more than just a vendor. We are your strategic partner in
+                the digital landscape.
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div
+                    class="d-flex align-items-center p-3 rounded bg-black bg-opacity-25"
+                  >
+                    <i class="fa-regular fa-comments text-info me-3 fa-lg"></i>
+                    <span class="fw-bold">Clear Communication</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="d-flex align-items-center p-3 rounded bg-black bg-opacity-25"
+                  >
+                    <i
+                      class="fa-solid fa-lightbulb text-warning me-3 fa-lg"
+                    ></i>
+                    <span class="fw-bold">Innovative Ideas</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="d-flex align-items-center p-3 rounded bg-black bg-opacity-25"
+                  >
+                    <i class="fa-solid fa-users text-primary me-3 fa-lg"></i>
+                    <span class="fw-bold">Client-Centric</span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div
+                    class="d-flex align-items-center p-3 rounded bg-black bg-opacity-25"
+                  >
+                    <i
+                      class="fa-solid fa-chart-line text-success me-3 fa-lg"
+                    ></i>
+                    <span class="fw-bold">Scalable Growth</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+      <div class="container measure-contact reveal">
+        <h2 class="display-5 mb-5">
+          Ready to <span class="gradient-text">Collaborate?</span>
+        </h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="glass-card text-start">
+              <div class="row g-4">
+                <div class="col-md-6 text-center text-md-start">
+                  <h4 class="mb-4">Get in Touch</h4>
+                  <p class="text-muted mb-4">
+                    Fill out the form or reach us directly via email. We usually
+                    respond within 24 hours.
+                  </p>
+
+                  <div class="mb-3">
+                    <a
+                      href="mailto:wajiha.nexora@gmail.com"
+                      class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start gap-3 p-3 rounded bg-white bg-opacity-10 hover-bg-opacity-20 transition"
+                    >
+                      <i class="fa-regular fa-envelope fa-lg text-primary"></i>
+                      <span>wajiha.nexora@gmail.com</span>
+                    </a>
+                  </div>
+
+                  <div class="mb-3">
+                    <a
+                      href="https://wa.me/923177760506"
+                      target="_blank"
+                      class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start gap-3 p-3 rounded bg-white bg-opacity-10 hover-bg-opacity-20 transition"
+                    >
+                      <i class="fa-brands fa-whatsapp fa-lg text-success"></i>
+                      <span>Chat on WhatsApp</span>
+                    </a>
+                  </div>
+
+                  <div class="mb-3">
+                    <a
+                      href="https://web.facebook.com/profile.php?id=61584956140172"
+                      target="_blank"
+                      class="text-decoration-none text-white d-flex align-items-center justify-content-center justify-content-md-start gap-3 p-3 rounded bg-white bg-opacity-10 hover-bg-opacity-20 transition"
+                    >
+                      <i class="fa-brands fa-facebook fa-lg text-primary"></i>
+                      <span>Visit Facebook Page</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nameInput"
+                        placeholder="Name"
+                      />
+                      <label for="nameInput">Your Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="emailInput"
+                        placeholder="name@example.com"
+                      />
+                      <label for="emailInput">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a comment here"
+                        id="floatingTextarea2"
+                        style="height: 100px"
+                      ></textarea>
+                      <label for="floatingTextarea2">Project Details</label>
+                    </div>
+                    <button type="submit" class="btn btn-future w-100">
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-muted mt-5 small">
+          &copy; 2025 NEXORA. All rights reserved.
+        </p>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/bg-animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
